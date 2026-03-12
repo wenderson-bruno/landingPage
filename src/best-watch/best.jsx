@@ -3,7 +3,7 @@ import best from '../images/best.jpg'
 
 function BestWatch() {
     return (
-        <section>
+        <section id='best'>
             <div className='container-best'>
                 <div className='todosItem'>
                     <div className='containerDaImagenDoBest'>

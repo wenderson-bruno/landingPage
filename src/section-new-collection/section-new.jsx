@@ -28,7 +28,7 @@ function SectionNew() {
         charge(prev)
     }
     return (
-        <section>
+        <section id='new-collection'>
             <div className='containerGeralSection'>
                 <h1 className='title-new'>New Collection</h1>
                 <p className='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit auctor dui, sed efficitur ipsum.</p>

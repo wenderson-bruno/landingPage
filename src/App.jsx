@@ -24,25 +24,19 @@ function App() {
 
   return (
     <div>
-      <header>
+      <header id='home'>
         <nav className='nav-bar'>
 
           <h1 className='title'>Zena</h1>
           <ul className='nav-list'>
             <li className='nav-list active'>
-              <a href="#">home</a>
+              <a href="#home">home</a>
             </li>
             <li>
-              <a href="#">new collection</a>
+              <a href="#new-collection">new collection</a>
             </li>
             <li>
-              <a href="#">about</a>
-            </li>
-            <li>
-              <a href="#">best selling products</a>
-            </li>
-            <li>
-              <a href="#">product list</a>
+              <a href="#best-seller">best selling products</a>
             </li>
           </ul>
 
@@ -57,16 +51,10 @@ function App() {
               <a href="#home">home</a>
             </li>
             <li>
-              <a href="#">new collection</a>
+              <a href="#new-collection">new collection</a>
             </li>
             <li>
-              <a href="#">about</a>
-            </li>
-            <li>
-              <a href="#">best selling products</a>
-            </li>
-            <li>
-              <a href="#">product list</a>
+              <a href="#best-seller">best selling products</a>
             </li>
             <button className='btn-order'>order here</button>
           </ul>

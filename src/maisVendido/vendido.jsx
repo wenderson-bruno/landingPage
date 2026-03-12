@@ -17,7 +17,7 @@ function MaisVendido() {
     const imagens = [image1, image2, image3, image4, image5]
 
     return (
-        <section>
+        <section id='best-seller'>
             <div className='container-de-tudo'>
                 <div className="container-de-inform">
                     <h1 className='title-bestSeller'>Best Seller <span>Product</span></h1>
