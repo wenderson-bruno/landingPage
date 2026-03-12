@@ -1,0 +1,93 @@
+.containerdoMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0px;
+}
+
+.container-do-Timeless {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width:  100%;
+}
+.container-do-Timeless p{
+    text-align: center;
+    font-weight: 500;
+}
+
+.titleMenu {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.titleMenu span {
+    margin-left: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cont-banner {
+    width: 500px;
+    max-width: 600px;
+}
+
+/* image */
+.imgBanner {
+    width: 100%;
+    border-radius: 15px 15px 15px 200px;
+    box-shadow: 1px 1px 10px #e55555;
+}
+
+.container-btn-buy {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-buy {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 2px solid black;
+    width: 150px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-buy::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: black;
+    transition: left 0.3s ease;
+    z-index: -1;
+}
+
+.btn-buy:hover::before {left: 0;}
+
+.btn-buy:hover {color: white;}
+
+@media screen and (max-width: 768px) {
+
+    .btn-buy {
+        background: black;
+        color: white;
+        border: none;
+    }
+
+    .btn-buy::before {
+        display: none;
+    }
+
+}

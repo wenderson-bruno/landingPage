@@ -1,0 +1,129 @@
+.container-de-tudo {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    background-color: #F7F7FF;
+}
+
+.title-bestSeller {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000;
+}
+
+.container-de-inform {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 100px;
+    width: 500px;
+    gap: 20px;
+}
+
+.title-bestSeller span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.p {
+    color: #000;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+/* image section */
+
+
+.imageAvaliada {
+    width: 300px;
+    height: 400px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 1px 1px 8px #000;
+}
+
+.continer-avaliação {
+    display: flex;
+    justify-content: center;
+}
+
+.avaliaçao {
+    background: #000;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 303px;
+    margin-bottom: 35px;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 1px 1px 5px #000;
+}
+
+.avaliaçao p span {
+    color: #c4b8b8c4;
+}
+
+/* ---------------------- */
+
+
+/* mobile */
+@media screen and (max-width: 768px) {
+    .container-de-tudo {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .container-de-inform {
+        text-align: center;
+        padding: 10px;
+        width: 250px;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .imageAvaliada {
+        width: 300px;
+        max-width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .p {
+        display: none;
+    }
+
+    .mySwiper {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .swiper-slide {
+        text-align: center;
+    }
+
+    .continer-avaliação {
+        display: flex;
+        justify-content: center;
+    }
+
+    .avaliaçao {
+        background: #000;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 303px;
+        margin-bottom: 25px;
+        border-radius: 0px 0px 8px 8px;
+        box-shadow: 1px 1px 5px #000;
+    }
+
+    .avaliaçao p span {
+        color: #c4b8b8c4;
+    }
+
+}

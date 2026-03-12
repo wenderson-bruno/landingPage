@@ -1,0 +1,63 @@
+.container-best {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+.title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.todosItem {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    gap: 60px;
+    position: relative;
+}
+
+.paragrafos {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 20px;
+}
+
+.imgBest {
+    width: 250px;
+    max-width: 250px;
+    border-radius: 70px 10px 10px 10px;
+    box-shadow: 1px 1px 10px #fff;
+}
+
+.numerosDeAlgo {
+    position: absolute;
+    bottom: -40px;
+    left: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(211, 211, 211, 0.655);
+    padding: 20px 30px;
+    border-radius: 1px;
+    padding-right: 10px;
+}
+
+.numerosDeAlgo span {
+    color: rgba(0, 0, 0, 0.698);
+}
+
+.itemNumero {
+    padding-right: 30px;
+    border-right: 1px solid rgba(0, 0, 0, 0.433);
+}
+.itemNumero:last-child{
+    border-right: none;
+}
+@media screen and (max-width: 768px) {
+    .imgBest{
+        display: none;
+    }
+    .numerosDeAlgo{
+       position: inherit;
+    }
+}
