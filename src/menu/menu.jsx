@@ -9,7 +9,7 @@ function Menu() {
     <main id='home'>
       <div className='containerdoMenu'>
         <div className='container-do-Timeless'>
-          <h1 className="titleMenu">Timeless<span> Watches</span></h1>
+          <h1 className="titleMenu">Timeless<span>  Watches</span></h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptatem quod deleniti dolorum quibusdam cupiditate nisi, fugiat molestias! Doloribus animi eligendi saepe. Corrupti voluptate, delectus nesciunt deleniti exercitationem iusto repudiandae!</p>
           <div className='container-btn-buy'><button className='btn-buy'>buy now</button></div>
         </div>

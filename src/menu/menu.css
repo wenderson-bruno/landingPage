@@ -81,6 +81,9 @@
 
 @media screen and (max-width: 768px) {
 
+    .titleMenu{
+        text-align: center;
+    }
     .btn-buy {
         background: black;
         color: white;

@@ -12,14 +12,9 @@ import Rodape from './rodapé/rodape.jsx'
 function App() {
   const [opneMenuMobile, setOpenMenuMobile] = useState(false)
 
-
   /* função de abrir menu mobile */
   function handleOpenMenuMobile() {
-    const icon = document.querySelector('.mobile-nav-list')
-    if (icon) {
-      icon.classList.toggle('active')
-    }
-    setOpenMenuMobile(true)
+    setOpenMenuMobile(!opneMenuMobile)
   }
 
   return (
@@ -46,15 +41,15 @@ function App() {
 
         {/* mobile */}
         <div className='mobile'>
-          <ul className='mobile-nav-list'>
+          <ul className={`mobile-nav-list ${opneMenuMobile ? 'active' : ''}`} >
             <li>
-              <a href="#home">home</a>
+              <a onClick={() => setOpenMenuMobile(false)} href="#home">home</a>
             </li>
             <li>
-              <a href="#new-collection">new collection</a>
+              <a onClick={() => setOpenMenuMobile(false)} href="#new-collection">new collection</a>
             </li>
             <li>
-              <a href="#best-seller">best selling products</a>
+              <a onClick={() => setOpenMenuMobile(false)} href="#best-seller">best selling products</a>
             </li>
             <button className='btn-order'>order here</button>
           </ul>
